@@ -7,17 +7,17 @@ const Navigation = () => (
   <nav role="navigation" className={styles.container} aria-label="Main">
     <Link to="/" className={styles.logoLink}>
       <span className={styles.logo} />
-      <span className={styles.navigationItem}>Gatsby Starter Contentful</span>
+      <span className={styles.navigationItem}>安了个装</span>
     </Link>
     <ul className={styles.navigation}>
       <li className={styles.navigationItem}>
         <Link to="/" activeClassName="active">
-          Home
+          主页
         </Link>
       </li>
       <li className={styles.navigationItem}>
         <Link to="/blog/" activeClassName="active">
-          Blog
+          博客
         </Link>
       </li>
     </ul>
