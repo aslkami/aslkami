@@ -41,7 +41,17 @@ module.exports = {
   },
   pathPrefix: '/fate',
   plugins: [
-    'gatsby-transformer-remark',
+    // 'gatsby-transformer-remark',
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+          },
+        ],
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
