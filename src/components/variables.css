@@ -86,3 +86,10 @@
     --text-prose: var(--text-lg);
   }
 }
+
+@media (max-width: 540px) {
+  :root {
+    --deckgo-highlight-code-container-width: 200%;
+    --deckgo-highlight-code-height: 300px;
+  }
+}

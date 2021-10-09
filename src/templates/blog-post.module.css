@@ -94,3 +94,10 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 540px) {
+  .body {
+    max-width: 48rem;
+    overflow: hidden;
+  }
+}

@@ -6,13 +6,18 @@ import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Tags from '../components/tags'
+import BlogSidebar from './../components/BlogSidebar/BlogSidebar'
+
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
 import * as styles from './blog-post.module.css'
+deckDeckGoHighlightElement()
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
     const previous = get(this.props, 'data.previous')
     const next = get(this.props, 'data.next')
+    console.log(post)
 
     return (
       <Layout location={this.props.location}>
@@ -32,6 +37,7 @@ class BlogPostTemplate extends React.Component {
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
             {post.body.childMarkdownRemark.timeToRead} minute read
           </span>
+          <BlogSidebar post={post} />
           <div className={styles.article}>
             <div
               className={styles.body}
@@ -93,6 +99,9 @@ export const pageQuery = graphql`
         childMarkdownRemark {
           html
           timeToRead
+          headings {
+            id
+          }
         }
       }
       tags

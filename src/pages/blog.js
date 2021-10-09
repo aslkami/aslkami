@@ -6,8 +6,6 @@ import Seo from '../components/seo'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader'
-deckDeckGoHighlightElement()
 
 class BlogIndex extends React.Component {
   render() {
