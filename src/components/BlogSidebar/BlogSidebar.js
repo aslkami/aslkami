@@ -13,7 +13,8 @@ function BlogSidebar({ post }) {
 
   const onAnchorListClick = (event) => {
     const anchor = event.target.textContent
-    document.querySelector(`#${anchor}`).scrollIntoView()
+    const ele = document.querySelector(`#${anchor}`)
+    ele && ele.scrollIntoView()
   }
 
   return (
