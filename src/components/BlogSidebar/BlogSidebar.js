@@ -22,7 +22,7 @@ function BlogSidebar({ post }) {
       className={styles.BlogSidebar}
       style={{ marginBottom: `${marginBottom}px` }}
     >
-      <ul onClick={onAnchorListClick}>
+      <ul className={styles.BlogSidebarUL} onClick={onAnchorListClick}>
         {anchorList.map(({ id }) => (
           <li key={id}>{id}</li>
         ))}
