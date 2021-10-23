@@ -32,6 +32,10 @@
   font-weight: var(--medium);
 }
 
+.article :global(a.anchor) {
+  border-bottom: none;
+}
+
 .article a:hover {
   border-bottom-color: transparent;
   color: var(--primary);

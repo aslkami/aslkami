@@ -100,6 +100,7 @@ export const pageQuery = graphql`
           timeToRead
           headings {
             id
+            depth
           }
         }
       }

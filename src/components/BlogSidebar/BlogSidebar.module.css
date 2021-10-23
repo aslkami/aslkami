@@ -4,7 +4,12 @@
   top: 30px;
   margin-left: 30px;
   transform: translateY(20px);
-  /* list-style: none; */
+}
+
+ul.BlogSidebarUL,
+ul.BlogSidebarUL > li {
+  list-style: none;
+  font-weight: 700;
 }
 
 ul.BlogSidebarUL li {

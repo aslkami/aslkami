@@ -23,8 +23,10 @@ function BlogSidebar({ post }) {
       style={{ marginBottom: `${marginBottom}px` }}
     >
       <ul className={styles.BlogSidebarUL} onClick={onAnchorListClick}>
-        {anchorList.map(({ id }) => (
-          <li key={id}>{id}</li>
+        {anchorList.map(({ id, depth }) => (
+          <li key={id} style={{ paddingLeft: (depth - 2) * 10 }}>
+            {id}
+          </li>
         ))}
       </ul>
     </div>
