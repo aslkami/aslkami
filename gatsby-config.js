@@ -37,7 +37,7 @@ if (!spaceId || !accessToken) {
 module.exports = {
   siteMetadata: {
     title: '安装的小屋',
-    description: '安了个装个人博客',
+    description: 'aslkami的小屋',
   },
   pathPrefix: '/fate',
   plugins: [
